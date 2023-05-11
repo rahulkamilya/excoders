@@ -1,5 +1,5 @@
 # Excoders
-##Introducing ExCoders - a dedicated community of tech enthusiasts who are passionate about sharing their knowledge and expertise with aspiring coders. Our group is committed to creating and collaborating on a wide range of projects that not only challenge our members but also help beginners along their coding journey.
+Introducing ExCoders - a dedicated community of tech enthusiasts who are passionate about sharing their knowledge and expertise with aspiring coders. Our group is committed to creating and collaborating on a wide range of projects that not only challenge our members but also help beginners along their coding journey.
 
 At ExCoders, we believe that everyone has the potential to become an accomplished coder, and our mission is to make that a reality for anyone who is eager to learn. Whether you're just starting out or looking to improve your skills, we offer a supportive and inclusive environment that encourages growth and exploration.
 
