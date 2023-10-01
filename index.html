@@ -8,21 +8,34 @@
 </head>
 <body>
   <header class="text-gray-400 bg-blue-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+  <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+    <a class="flex justify-center items-center title-font font-medium items-center text-white md:mb-0">
       <img class="w-20 h-20 rounded-full mx-auto" src="Excoders (2).png">
       <span class="ml-3 text-xl">Excoders</span>
     </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+    <nav class="hidden md:block md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a href class="mr-5 hover:text-white" >Our Team</a>
       <a href class ="mr-5 hover:text-white">Projects</a>
       <a href ="https://kamilya.hashnode.dev/" target="_blank" class ="mr-5 hover:text-white">Blogs</a>
+      <a href="https://wa.me/+917029660094"> <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Join Us
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button></a>
     </nav>
-    <a href="https://wa.me/+917029660094"> <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Join Us
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button></a>
+   <div id="hamburger-menu-btn" class="md:!hidden fa fa-bars text-black fa-2x"></div> 
+    <nav id="hamburger-menu" class="hidden fixed right-0 top-[120px] bg-blue-900 h-screen w-screen transition-transform">
+      <div class="flex flex-col p-4 justify-center items-center gap-4">
+        <a href class="text-white mt-4 text-xl" >Our Team</a>
+        <a href class ="text-white mt-4 text-xl">Projects</a>
+        <a href ="https://kamilya.hashnode.dev/" target="_blank" class ="text-white mt-4 text-xl">Blogs</a>
+        <a href="https://wa.me/+917029660094"> <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 h-12 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Join Us
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button></a>
+      </div>
+    </nav>
   </div>
 </header>
  <!-- our team informations -->
@@ -271,7 +284,7 @@
                       class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
                       About </h1> <span class="text-white font-sans uppercase font-normal tracking-wider"></span>
               </div>
-              <p class=""> <a class="hover:text-[#cacaca]" href="#">Our Team</a> </p>
+              <p class=""> <a class="hover:text-[#cacaca]" href="#">O ur Team</a> </p>
               <p class=""> <a class="hover:text-[#cacaca]" href="#">Projects</a> </p>
               <p class=""> <a class="hover:text-[#cacaca]" href="#">Blogs</a> </p>
           </div>
@@ -342,5 +355,6 @@
   </div>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
