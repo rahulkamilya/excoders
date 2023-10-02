@@ -7,199 +7,430 @@
     <link rel="icon" type="image/x-icon" href="Excoders (2).png" />
   </head>
   <body class="bg-gray-100">
-
+    <!----------- header --------------->
     <header class="text-gray-400 bg-blue-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
-          <a class="flex justify-center items-center title-font font-medium items-center text-white md:mb-0">
-            <img class="w-10 h-10 rounded-full mx-auto sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20 " src="Excoders (2).png">
-            <span class="ml-3 text-3xl">Excoders</span>
-          </a>
-          <nav class="hidden md:block md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href class="mr-5  hover:text-white text-xl" >Our Team</a>
-            <a href="projects.html" class ="mr-5 hover:text-white text-xl">Projects</a>
-            <a href ="https://kamilya.hashnode.dev/" target="_blank" class ="mr-5 hover:text-white text-xl">Blogs</a>
-            <a href="https://wa.me/+917029660094"> <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-xl">Join Us
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between"
+      >
+        <a
+          class="flex justify-center items-center title-font font-medium items-center text-white md:mb-0"
+        >
+          <img
+            class="w-10 h-10 rounded-full mx-auto sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20"
+            src="Excoders (2).png"
+          />
+          <span class="ml-3 text-3xl">Excoders</span>
+        </a>
+        <nav
+          class="hidden md:block md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href class="mr-5 hover:text-white text-xl">Our Team</a>
+          <a href="projects.html" class="mr-5 hover:text-white text-xl"
+            >Projects</a
+          >
+          <a
+            href="https://kamilya.hashnode.dev/"
+            target="_blank"
+            class="mr-5 hover:text-white text-xl"
+            >Blogs</a
+          >
+          <a href="https://wa.me/+917029660094">
+            <button
+              class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-xl"
+            >
+              Join Us
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-1"
+                viewBox="0 0 24 24"
+              >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button></a>
-          </nav>
-         <div id="hamburger-menu-btn" class="md:!hidden fa fa-bars text-black fa-2x"></div> 
-          <nav id="hamburger-menu" class="hidden fixed right-0 top-[120px] bg-blue-900 h-screen w-screen transition-transform">
-            <div class="flex flex-col p-4 justify-center items-center gap-4">
-              <a href class="text-white mt-4 text-xl" >Our Team</a>
-              <a href class ="text-white mt-4 text-xl">Projects</a>
-              <a href ="https://kamilya.hashnode.dev/" target="_blank" class ="text-white mt-4 text-xl">Blogs</a>
-              <a href="https://wa.me/+917029660094"> <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 h-12 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Join Us
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              </svg></button
+          ></a>
+        </nav>
+        <div
+          id="hamburger-menu-btn"
+          class="md:!hidden fa fa-bars text-black fa-2x"
+        ></div>
+        <nav
+          id="hamburger-menu"
+          class="hidden fixed right-0 top-[120px] bg-blue-900 h-screen w-screen transition-transform"
+        >
+          <div class="flex flex-col p-4 justify-center items-center gap-4">
+            <a href class="text-white mt-4 text-xl">Our Team</a>
+            <a href class="text-white mt-4 text-xl">Projects</a>
+            <a
+              href="https://kamilya.hashnode.dev/"
+              target="_blank"
+              class="text-white mt-4 text-xl"
+              >Blogs</a
+            >
+            <a href="https://wa.me/+917029660094">
+              <button
+                class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 h-12 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+              >
+                Join Us
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button></a>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-    <div class="container mx-auto py-8">
-      <h1 class=" text-3xl font-semibold mb-[50px]   text-center ">Project Showcase</h1>
+                </svg></button
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!------------ main body ------------>
+    <main class="container mx-auto py-8">
+      <h1 class="text-3xl font-semibold mb-[50px] text-center">
+        Project Showcase
+      </h1>
 
       <!-- Project Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-5 justify-items-center ">
-
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-5 justify-items-center"
+      >
         <!-- Project 1 -->
-        <div class="  max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="https://www.malwarebytes.com/blog/images/uploads/2021/11/scan_face.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Facial Recognition for Access Control</div>
-              <p class="text-gray-700 text-base">
-                Uses ML to recognize authorized individuals' faces for secure access to buildings and facilities, enhancing security.
-              </p>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://www.malwarebytes.com/blog/images/uploads/2021/11/scan_face.png"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              Facial Recognition for Access Control
             </div>
-            <div class=" px-6 pt-4 pb-2 ">
-              <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded ">Github <img class="inline"  src="github-mark.png" alt="git logo" width="20" > </a>
-              <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2   bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded">Live 🚀</a>
-              
-            </div>
+            <p class="text-gray-700 text-base">
+              Uses ML to recognize authorized individuals' faces for secure
+              access to buildings and facilities, enhancing security.
+            </p>
           </div>
-
-           <!-- Project 2 -->
-        <div class=" max-w-sm rounded overflow-hidden shadow-lg">
-            <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIr1CgbJ_wvnnD_YOL0K_hg4hMhd2WDulrj8Z351aswoTKw25K4FnByvid3a7T9iDAcKw&usqp=CAU" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Predictive Maintenance for Industrial Machinery</div>
-              <p class="text-gray-700 text-base">
-                Applies data science to forecast machinery failures, reducing downtime and maintenance costs through proactive equipment servicing.
-              </p>
-            </div>
-            <div class=" px-6 pt-4 pb-2">
-              <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded ">Github <img class="inline"  src="github-mark.png" alt="git logo" width="20" > </a>
-              <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2   bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded">Live 🚀</a>
-              
-            </div>
+          <div class="px-6 pt-4 pb-2">
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded"
+              >Github
+              <img
+                class="inline"
+                src="github-mark.png"
+                alt="git logo"
+                width="20"
+              />
+            </a>
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded"
+              >Live 🚀</a
+            >
           </div>
+        </div>
 
-               <!-- Project 3 -->
-        <div class=" max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="https://www.opensourceforu.com/wp-content/uploads/2018/05/Android-app-development.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">HealthGuard: Personal Health Assistant</div>
-      <p class="text-gray-700 text-base">
-        An Android app for monitoring and improving health, offering features like fitness tracking, medication reminders, and telehealth consultations.
-      </p>
-    </div>
-    <div class=" px-6 pt-4 pb-2">
-      <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded ">Github <img class="inline"  src="github-mark.png" alt="git logo" width="20" > </a>
-      <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2   bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded">Live 🚀</a>
-      
-    </div>
-           </div>
+        <!-- Project 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIr1CgbJ_wvnnD_YOL0K_hg4hMhd2WDulrj8Z351aswoTKw25K4FnByvid3a7T9iDAcKw&usqp=CAU"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              Predictive Maintenance for Industrial Machinery
+            </div>
+            <p class="text-gray-700 text-base">
+              Applies data science to forecast machinery failures, reducing
+              downtime and maintenance costs through proactive equipment
+              servicing.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded"
+              >Github
+              <img
+                class="inline"
+                src="github-mark.png"
+                alt="git logo"
+                width="20"
+              />
+            </a>
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded"
+              >Live 🚀</a
+            >
+          </div>
+        </div>
 
-             <!-- Project 4 -->
-        <div class=" max-w-sm rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReArpfupmkmZi3gFxf1R2T8TjPMHMTk604uw&usqp=CAU" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">CyberShield: Advanced Threat Detection</div>
-      <p class="text-gray-700 text-base">
-        Employs cutting-edge cybersecurity technologies to identify and mitigate sophisticated cyber threats, safeguarding critical digital assets.
-      </p>
-    </div>
-        <div class="  px-6 pt-4 pb-2">
-      <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded ">Github <img class="inline"  src="github-mark.png" alt="git logo" width="20" > </a>
-      <a href="#" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2   bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded">Live 🚀</a>
-      
-       </div>
-    </div>
+        <!-- Project 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://www.opensourceforu.com/wp-content/uploads/2018/05/Android-app-development.jpg"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              HealthGuard: Personal Health Assistant
+            </div>
+            <p class="text-gray-700 text-base">
+              An Android app for monitoring and improving health, offering
+              features like fitness tracking, medication reminders, and
+              telehealth consultations.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded"
+              >Github
+              <img
+                class="inline"
+                src="github-mark.png"
+                alt="git logo"
+                width="20"
+              />
+            </a>
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded"
+              >Live 🚀</a
+            >
+          </div>
+        </div>
 
-
+        <!-- Project 4 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <img
+            class="w-full"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReArpfupmkmZi3gFxf1R2T8TjPMHMTk604uw&usqp=CAU"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              CyberShield: Advanced Threat Detection
+            </div>
+            <p class="text-gray-700 text-base">
+              Employs cutting-edge cybersecurity technologies to identify and
+              mitigate sophisticated cyber threats, safeguarding critical
+              digital assets.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-blue-400 to-blue-800 hover:from-blue-500 hover:to-blue-900 shadow-md text-white font-semibold py-2 px-4 rounded"
+              >Github
+              <img
+                class="inline"
+                src="github-mark.png"
+                alt="git logo"
+                width="20"
+              />
+            </a>
+            <a
+              href="#"
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-gradient-to-r from-pink-400 via-red-400 to-yellow-500 hover:from-pink-500 hover:via-red-500 hover:to-yellow-600 shadow-lg text-white font-semibold py-2 px-4 rounded"
+              >Live 🚀</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-
-<footer class="flex justify-center">
-    <div class="bg-black p-4 items-center">
-        <div class="flex justify-center pt-10 pb-14 md:pb-9"> <img class="w-2/5 md:w-[25%] lg:w-[18%] xl:w-[15%]"
-                src="cucet-footer-logo.png" alt="" srcset="" /> </div>
-        <div class="space-y-9 grid grid-cols-1 md:grid-cols-2 md:pl-24 md:pr-16 lg:grid-cols-4 lg:px-7 xl:px-14 xl:ml-16">
-            <div class="text-[#6d6d6d] font-[650] text-[16px] leading-7">
-                <div class="flex justify-start md:mt-10">
-                    <h1
-                        class="text-white pb-[36px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
-                        Inform </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">ation</span>
-                </div>
-                <p>Excoders is a team of dedicated individuals passionate about coding and programming. We specialize in creating innovative projects using cutting-edge technology to make a positive impact on society. 
-                  Our goal is to inspire and empower people to begin their coding journey and learn valuable skills to succeed in today's tech-driven world. </p>
-            </div>
-            <div class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide md:">
-                <div>
-                    
-                </div>
-                
-            </div>
-            <div class="md:flex flex-col justify-between">
-                <div class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide">
-                    <div class="flex justify-start">
-                        <h1
-                            class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
-                            About </h1> <span class="text-white font-sans uppercase font-normal tracking-wider"></span>
-                    </div>
-                    <p class=""> <a class="hover:text-[#cacaca]" href="#">Our Team</a> </p>
-                    <p class=""> <a class="hover:text-[#cacaca]" href="#">Projects</a> </p>
-                    <p class=""> <a class="hover:text-[#cacaca]" href="#">Blogs</a> </p>
-                </div>
-                <div
-                    class="text-[#747474] text-[15px] font-[550] leading-6 tracking-wide mt-9 md:order-5 md:pt-32 lg:pb-28">
-                    <div class="flex justify-start md:-mt-32">
-                        <h1
-                            class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
-                            suppor </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">t</span>
-                    </div>
-                    <p class=""> <a href="#" class="hover:text-[#cacaca]">FAQ's</a> </p>
-                </div>
-            </div>
-            <div class="text-[#797878] text-[15px] font-[550] leading-6 tracking-wide md:order-4 lg:">
-                <div class="flex justify-start">
-                    <h1
-                        class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90">
-                        get in t </h1> <span class="text-white font-sans uppercase font-normal tracking-wider">ouch</span>
-                </div>
-                <p class="space-x-3"> <i class="fa fa-home text-[17px]"></i><strong
-                        class="text-[#8b8b8b] text-[15px] tracking-wide">Kolkata, West Bengal</strong> </p>
-                <div class="leading-7">
-                    <p class=""> 12 Old Nimta Rd, Nabin Pally <br /> Belgharia, West Bengal <br/> 
-                         </p>
-                </div>
-                <div class="leading-7 mt-4 text-[15px] font-[500]">
-                    
-                    <p class="space-x-3 hover:text-[#cacaca]"> <i class="fa fa-whatsapp text-[17px]"></i> <a
-                            href="https://api.whatsapp.com/send/?phone=%2B919382845895&text&type=phone_number&app_absent=0"> Priyanshu Das ( <span class="text-[13px] font-[500]">General Enquiry</span> )</a> </p>
-                    <p class="space-x-3 hover:text-[#cacaca]"> <i class="fa fa-whatsapp text-[17px]"></i> <a
-                            href="https://wa.me/+917029660094">Rahul Kamilya &nbsp;( <span class="text-[13px] font-[500]">Technical Support </span> )
-                        </a> </p>
-                    <p class="space-x-3 hover:text-[#cacaca]"> <i class="fa fa-envelope text-[16px]"></i> <a href="mailto:excoders.tech@gmail.com">excoders.tech@gmail.com</a></p>
-                </div>
-            </div>
+    </main>
+    <!------------ footer ------------>
+    <footer class="flex justify-center">
+      <div class="bg-black p-4 items-center">
+        <div class="flex justify-center pt-10 pb-14 md:pb-9">
+          <img
+            class="w-2/5 md:w-[25%] lg:w-[18%] xl:w-[15%]"
+            src="cucet-footer-logo.png"
+            alt=""
+            srcset=""
+          />
         </div>
-        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
-          2023 —
-          <a href="#" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">Excoders all rights reserved</a>
-      </p>
-        <div class="divide-y divide-[#747474] contrast-200 mt-3 mb-3 md:-mt-4 md:-mb-2 lg:-mt-16 xl:-mt-24">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+        <div
+          class="space-y-9 grid grid-cols-1 md:grid-cols-2 md:pl-24 md:pr-16 lg:grid-cols-4 lg:px-7 xl:px-14 xl:ml-16"
+        >
+          <div class="text-[#6d6d6d] font-[650] text-[16px] leading-7">
+            <div class="flex justify-start md:mt-10">
+              <h1
+                class="text-white pb-[36px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"
+              >
+                Inform
+              </h1>
+              <span
+                class="text-white font-sans uppercase font-normal tracking-wider"
+                >ation</span
+              >
+            </div>
+            <p>
+              Excoders is a team of dedicated individuals passionate about
+              coding and programming. We specialize in creating innovative
+              projects using cutting-edge technology to make a positive impact
+              on society. Our goal is to inspire and empower people to begin
+              their coding journey and learn valuable skills to succeed in
+              today's tech-driven world.
+            </p>
+          </div>
+          <div
+            class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide md:"
+          >
+            <div></div>
+          </div>
+          <div class="md:flex flex-col justify-between">
+            <div
+              class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide"
+            >
+              <div class="flex justify-start">
+                <h1
+                  class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"
+                >
+                  About
+                </h1>
+                <span
+                  class="text-white font-sans uppercase font-normal tracking-wider"
+                ></span>
+              </div>
+              <p class="">
+                <a class="hover:text-[#cacaca]" href="#">Our Team</a>
+              </p>
+              <p class="">
+                <a class="hover:text-[#cacaca]" href="#">Projects</a>
+              </p>
+              <p class=""><a class="hover:text-[#cacaca]" href="#">Blogs</a></p>
+            </div>
+            <div
+              class="text-[#747474] text-[15px] font-[550] leading-6 tracking-wide mt-9 md:order-5 md:pt-32 lg:pb-28"
+            >
+              <div class="flex justify-start md:-mt-32">
+                <h1
+                  class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"
+                >
+                  suppor
+                </h1>
+                <span
+                  class="text-white font-sans uppercase font-normal tracking-wider"
+                  >t</span
+                >
+              </div>
+              <p class=""><a href="#" class="hover:text-[#cacaca]">FAQ's</a></p>
+            </div>
+          </div>
+          <div
+            class="text-[#797878] text-[15px] font-[550] leading-6 tracking-wide md:order-4 lg:"
+          >
+            <div class="flex justify-start">
+              <h1
+                class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-red-500/90"
+              >
+                get in t
+              </h1>
+              <span
+                class="text-white font-sans uppercase font-normal tracking-wider"
+                >ouch</span
+              >
+            </div>
+            <p class="space-x-3">
+              <i class="fa fa-home text-[17px]"></i
+              ><strong class="text-[#8b8b8b] text-[15px] tracking-wide"
+                >Kolkata, West Bengal</strong
+              >
+            </p>
+            <div class="leading-7">
+              <p class="">
+                12 Old Nimta Rd, Nabin Pally <br />
+                Belgharia, West Bengal <br />
+              </p>
+            </div>
+            <div class="leading-7 mt-4 text-[15px] font-[500]">
+              <p class="space-x-3 hover:text-[#cacaca]">
+                <i class="fa fa-whatsapp text-[17px]"></i>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=%2B919382845895&text&type=phone_number&app_absent=0"
+                >
+                  Priyanshu Das (
+                  <span class="text-[13px] font-[500]">General Enquiry</span>
+                  )</a
+                >
+              </p>
+              <p class="space-x-3 hover:text-[#cacaca]">
+                <i class="fa fa-whatsapp text-[17px]"></i>
+                <a href="https://wa.me/+917029660094"
+                  >Rahul Kamilya &nbsp;(
+                  <span class="text-[13px] font-[500]">Technical Support </span>
+                  )
+                </a>
+              </p>
+              <p class="space-x-3 hover:text-[#cacaca]">
+                <i class="fa fa-envelope text-[16px]"></i>
+                <a href="mailto:excoders.tech@gmail.com"
+                  >excoders.tech@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-center mb-4 md:mb-1 text-[#afafaf] text-center text-xl space-x-3">
-            <p> <a href="#"
-                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"><i
-                        class="fa fa-facebook"></i></a> </p>
-            <p> <a href="#"
-                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
-                        class="fa fa-twitter"></i></a> </p>
-            <p> <a href="#"
-                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
-                        class="fa fa-instagram"></i></a> </p>
-            <p> <a href="#"
-                    class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
-                        class="fa fa-linkedin"></i></a> </p>
-            <!-- <p> <a href="#"
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2023 —
+          <a
+            href="#"
+            class="text-gray-500 ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Excoders all rights reserved</a
+          >
+        </p>
+        <div
+          class="divide-y divide-[#747474] contrast-200 mt-3 mb-3 md:-mt-4 md:-mb-2 lg:-mt-16 xl:-mt-24"
+        >
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+        <div
+          class="flex justify-center mb-4 md:mb-1 text-[#afafaf] text-center text-xl space-x-3"
+        >
+          <p>
+            <a
+              href="#"
+              class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </p>
+          <p>
+            <a
+              href="#"
+              class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </p>
+          <p>
+            <a
+              href="#"
+              class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </p>
+          <p>
+            <a
+              href="#"
+              class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </p>
+          <!-- <p> <a href="#"
                     class="w-10 h-10 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"><i
                         class="fa fa-youtube"></i></a> </p>
             <p> <a href="#"
@@ -213,8 +444,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
         <script src="./index.js"></script>
-          </div>
-</footer> 
-
+      </div>
+    </footer>
   </body>
 </html>
