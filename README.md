@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="path/to/your/app/screenshot.png" alt="App Screenshot" width="600">
+  <img src="https://github.com/rahulkamilya/excoders/blob/main/team-final.png" alt="App Screenshot" width="600">
 </p>
 
 ## 🎓 About ExCoders
@@ -37,8 +37,5 @@ We welcome contributions! If you'd like to contribute to ExCoders, please follow
 - [Rahul Kamilya](https://github.com/rahulkamilya)
 - [Priyanshu Das](https://www.facebook.com/priyanshu.das.568294)
 
-
-📷 Screenshots
-![App Screenshot](https://github.com/rahulkamilya/excoders/blob/main/team-final.png)
 
 
