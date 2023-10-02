@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+    .bg-blue-900 {
+      z-index: 999;
+    }
+    body {
+      padding-top: 0px;
+    }
+}

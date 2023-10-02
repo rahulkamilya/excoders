@@ -9,3 +9,14 @@ hamburgerMenuBtn.addEventListener("click", () => {
     hamburgerMenu.style.transform = 'translateX(0%)';
   }
 })
+
+
+function adjustingPadding(){
+  const navbar= document.getElementById('navbar');
+  const body= document.body;
+  const navbarHeight=navbar.clientHeight;
+  body.style.paddingTop=navbarHeight+'px';
+}
+
+window.addEventListener('load',adjustingPadding);
+window.addEventListener('resize',adjustingPadding);
