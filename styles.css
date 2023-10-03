@@ -1,8 +1,11 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .bg-blue-900 {
       z-index: 999;
     }
     body {
       padding-top: 0px;
+    }
+    .new{
+      max-width: 186.488px;
     }
 }
