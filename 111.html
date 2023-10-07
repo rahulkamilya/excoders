@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #content {
+            height: 2000px; /* This is just for demonstration purposes to create scrolling content */
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #scrollLink {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- Your website content goes here -->
+        <h1>Welcome to My Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        <!-- ... more content ... -->
+    </div>
+
+    <a href="#home" id="scrollLink">Scroll to Top</a>
+
+    <script>
+        document.getElementById('scrollLink').addEventListener('click', function() {
+            const content = document.getElementById('content');
+            const yOffset = content.getBoundingClientRect().top;
+            const yOffsetSmooth = yOffset - 50; 
+
+            window.scrollTo({
+                top: yOffsetSmooth,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
