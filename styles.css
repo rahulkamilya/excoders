@@ -9,3 +9,42 @@
       max-width: 186.488px;
     }
 }
+
+/* review-card.css */
+
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px; /* Set the desired width of your card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05); /* Increase size on hover for a subtle effect */
+}
+
+.review-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.review-card .author {
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.review-card .designation {
+  color: #718096;
+}
+
