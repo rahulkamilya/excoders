@@ -11,3 +11,49 @@
 }
 
 
+
+/* code for logo animation */
+.logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+  margin-right: 20px; /* Add space to the right side of the icon (adjust the value as needed) */
+}
+
+.text-container {
+  display: flex;
+  margin-left: 10px;
+}
+
+.logo-text {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1s; /* Delay the animation by 1 second */
+
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
