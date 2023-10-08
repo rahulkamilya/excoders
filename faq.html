@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page | EXCODERS</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, ul {
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(202, 205, 198);
+        }
+        
+        /* Set a background color and text color */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            color: #6e6868;
+            background: linear-gradient(90deg, #5e4747,#787373)
+        }
+
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the search bar */
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Style the suggestion container */
+        .suggestion-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+            display: none;
+        }
+
+        /* Style each suggestion item */
+        .suggestion-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        /* Highlight the selected suggestion */
+        .suggestion-item:hover {
+            background-color: #f2f2f2;
+        }
+        #scrollLink {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: medium;
+        }
+        a:hover {
+            color: floralwhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="faq-container">
+        <input type="text" class="search-bar" placeholder="Search FAQs..." id="searchInput">
+        <div class="suggestion-container" id="suggestionContainer"></div>
+    </div>
+    <a href="/index.html" id="scrollLink">Return to Home Page</a>
+    <script>
+        // Sample FAQ suggestions (you can replace this with your own data)
+        const faqSuggestions = [
+            "Who are Excoders?",
+            "How can I contact support?",
+            "Do you offer refunds?",
+            "Can I get more information about Excoders?",
+            "Shipping and delivery information",
+            "Account creation and management",
+            "How can I become a part of Excoders",
+
+        ];
+
+        const searchInput = document.getElementById("searchInput");
+        const suggestionContainer = document.getElementById("suggestionContainer");
+
+        // Function to show suggestions based on user input
+        function showSuggestions() {
+            const inputValue = searchInput.value.toLowerCase();
+            const suggestions = faqSuggestions.filter(faq => faq.toLowerCase().includes(inputValue));
+            suggestionContainer.innerHTML = "";
+
+            if (inputValue === "") {
+                suggestionContainer.style.display = "none";
+                return;
+            }
+
+            suggestions.slice(0, 4).forEach(suggestion => {
+                const suggestionItem = document.createElement("div");
+                suggestionItem.classList.add("suggestion-item");
+                suggestionItem.textContent = suggestion;
+
+                suggestionItem.addEventListener("click", () => {
+                    searchInput.value = suggestion;
+                    suggestionContainer.style.display = "none";
+                });
+
+                suggestionContainer.appendChild(suggestionItem);
+            });
+
+            suggestionContainer.style.display = "block";
+        }
+
+        searchInput.addEventListener("input", showSuggestions);
+    </script>
+</body>
+</html>
