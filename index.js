@@ -20,3 +20,15 @@ function adjustingPadding(){
 
 window.addEventListener('load',adjustingPadding);
 window.addEventListener('resize',adjustingPadding);
+
+//preloader
+window.addEventListener('load', () => {
+  // After the page and all assets have loaded
+  const preloader = document.querySelector('.preloader');
+  const mainSite = document.querySelector('.site-wrap');
+
+  setTimeout(() => {
+      preloader.style.display = 'none'; // Hide the preloader
+      mainSite.style.display = 'block';  // Show the main site
+  }, 3000); // 3 seconds
+});

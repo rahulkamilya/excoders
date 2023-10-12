@@ -56,4 +56,40 @@
       opacity: 1;
   }
 }
+/*Preloader animation*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.preloader-logo {
+  width: 200px; /* Adjust the size to your preference */
+  height: 200px;
+  border-radius: 50%;
+  animation: pulse 3s linear infinite;
+}
+@-webkit-keyframes "pulse" {
+  0% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+  }
+  50% {
+     -webkit-transform: scale(0.8);
+     transform: scale(0.8);
+  }
+  100% {
+      -webkit-transform: scale(1);
+     transform: scale(1);
+  }
+  }
 
+.site-wrap {
+  display: none; /* Hide the main site initially */
+}
